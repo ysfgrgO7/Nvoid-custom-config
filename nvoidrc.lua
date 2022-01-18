@@ -29,7 +29,9 @@ M.options = {
 }
 
 -- Add lsp
-M.lsp_add = {}
+M.lsp_add = {
+	"bashls",
+}
 
 -- Add treesitter language
 M.ts_add = {}
