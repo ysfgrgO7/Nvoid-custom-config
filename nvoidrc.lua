@@ -34,7 +34,7 @@ M.lsp_add = {
 }
 
 -- Add treesitter language
-M.ts_add = {}
+M.ts_add = "all"
 
 -- Add Plugins
 M.plugins_add = {
