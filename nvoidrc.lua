@@ -2,7 +2,7 @@ local M = {}
 
 -- UI
 M.ui = {
-	theme = "darkplus", -- 'onedarker' 'gruvbox' 'dracula' 'doom-one' 'tokyonight' 'nord' 'darkplus'
+	theme = "onedarker", -- 'onedarker' 'tokyonight' 'nord' 'darkplus'
 	transparency = false,
 	statusline = "vscode", -- 'nvoid' 'lunarvim' 'vscode' 'bubbles' 'nvchad'
 }
@@ -34,7 +34,9 @@ M.lsp_add = {
 }
 
 -- Add treesitter language
-M.ts_add = "all"
+M.ts_add = {
+  "fish",
+}
 
 -- Add Plugins
 M.plugins_add = {
