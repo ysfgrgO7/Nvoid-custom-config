@@ -2,7 +2,7 @@ local M = {}
 
 -- UI
 M.ui = {
-	theme = "onedarker", -- 'onedarker' 'tokyonight' 'nord' 'darkplus'
+	theme = "tokyonight", -- 'onedarker' 'tokyonight' 'nord' 'darkplus'
 	transparency = false,
 	statusline = "vscode", -- 'nvoid' 'lunarvim' 'vscode' 'bubbles' 'nvchad'
 }
