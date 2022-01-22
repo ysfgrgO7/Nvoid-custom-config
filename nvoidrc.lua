@@ -2,9 +2,9 @@ local M = {}
 
 -- UI
 M.ui = {
-	theme = "tokyonight", -- 'onedarker' 'tokyonight' 'nord' 'darkplus'
+	theme = "catppuccin",
 	transparency = false,
-	statusline = "vscode", -- 'nvoid' 'lunarvim' 'vscode' 'bubbles' 'nvchad'
+	statusline = "nvoid",
 }
 
 -- Options
@@ -35,7 +35,7 @@ M.lsp_add = {
 
 -- Add treesitter language
 M.ts_add = {
-  "fish",
+	"fish",
 }
 
 -- Add Plugins
@@ -50,6 +50,18 @@ M.plugins_add = {
 		"folke/twilight.nvim",
 		config = function()
 			require("custom.config.twilight")
+		end,
+	},
+	{
+		"ahmedkhalf/project.nvim",
+		config = function()
+			require("custom.config.projects")
+		end,
+	},
+	{
+		"nvim-telescope/telescope-project.nvim",
+		config = function()
+			require("custom.config.telescope")
 		end,
 	},
 }
@@ -67,6 +79,7 @@ M.whichkey_add = {
 		z = { "<cmd>ZenMode<cr>", "ZenMode" },
 		t = { "<cmd>Twilight<cr>", "Twilight" },
 	},
+	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 }
 
 return M
