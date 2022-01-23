@@ -80,6 +80,7 @@ M.whichkey_add = {
 		t = { "<cmd>Twilight<cr>", "Twilight" },
 	},
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+	["t"] = { "<cmd>:execute 13 .. 'new +terminal' | let b:term_type = 'hori' | startinsert<cr>", "Terminal" },
 }
 
 return M
