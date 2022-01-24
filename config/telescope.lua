@@ -1,3 +1,7 @@
--- require("telescope").load_extension("project")
-require("telescope").load_extension("projects")
--- require("telescope").extensions.project.project({})
+local M = {}
+
+M.project = function()
+	require("telescope").load_extension("projects")
+end
+
+return M
