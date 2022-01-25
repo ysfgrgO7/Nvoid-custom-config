@@ -64,6 +64,7 @@ M.plugins_add = {
 			require("custom.config.telescope").project()
 		end,
 	},
+	{ "nvim-telescope/telescope-packer.nvim" },
 }
 
 -- Add new whichkey bind
