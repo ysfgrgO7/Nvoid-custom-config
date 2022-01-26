@@ -65,6 +65,7 @@ M.plugins_add = {
 		end,
 	},
 	{ "nvim-telescope/telescope-packer.nvim" },
+	{ "kevinhwang91/rnvimr" },
 }
 
 -- Add new whichkey bind
@@ -85,6 +86,7 @@ M.whichkey_add = {
 		v = { "<cmd>:ToggleTerm size=13 direction=horizontal<cr>", "Horizontal" },
 		t = { "<cmd>:ToggleTerm direction=tab<cr>", "New tab" },
 	},
+	["r"] = { "<cmd>:RnvimrToggle<cr>", "Ranger" },
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 }
 
