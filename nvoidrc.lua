@@ -112,7 +112,12 @@ M.whichkey_add = {
 		t = { "<cmd>:ToggleTerm direction=tab<cr>", "New tab" },
 	},
 	["r"] = { "<cmd>:RnvimrToggle<cr>", "Ranger" },
-	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+	f = {
+		name = "Find",
+		p = { "<cmd>Telescope projects<cr>", "Projects" },
+		W = { "<cmd>Telescope arecibo websearch<cr>", "Web" },
+		l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
+	},
 }
 
 return M
