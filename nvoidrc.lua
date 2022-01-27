@@ -40,7 +40,6 @@ M.ts_add = {
 
 -- Add Plugins
 M.plugins_add = {
-
 	{
 		"folke/zen-mode.nvim",
 		config = function()
@@ -69,8 +68,6 @@ M.plugins_add = {
 		end,
 	},
 
-	{ "nvim-telescope/telescope-packer.nvim" },
-
 	{
 		"nvim-telescope/telescope-github.nvim",
 		config = function()
@@ -85,6 +82,9 @@ M.plugins_add = {
 			require("custom.config.telescope_plugins").arecibo()
 		end,
 	},
+
+	{ "nvim-telescope/telescope-packer.nvim" },
+
 	{
 		"kevinhwang91/rnvimr",
 		config = function()
