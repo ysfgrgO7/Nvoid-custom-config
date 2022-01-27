@@ -40,32 +40,57 @@ M.ts_add = {
 
 -- Add Plugins
 M.plugins_add = {
+
 	{
 		"folke/zen-mode.nvim",
 		config = function()
-			require("custom.config.zen")
+			require("custom.config.focus").zen()
 		end,
 	},
+
 	{
 		"folke/twilight.nvim",
 		config = function()
-			require("custom.config.twilight")
+			require("custom.config.focus").twilight()
 		end,
 	},
+
 	{
 		"ahmedkhalf/project.nvim",
 		config = function()
 			require("custom.config.projects")
 		end,
 	},
+
 	{
 		"nvim-telescope/telescope-project.nvim",
 		config = function()
-			require("custom.config.telescope").project()
+			require("custom.config.telescope_plugins").project()
 		end,
 	},
+
 	{ "nvim-telescope/telescope-packer.nvim" },
-	{ "kevinhwang91/rnvimr" },
+
+	{
+		"nvim-telescope/telescope-github.nvim",
+		config = function()
+			require("custom.config.telescope_plugins").gh()
+		end,
+	},
+
+	{
+		"nvim-telescope/telescope-arecibo.nvim",
+		rocks = { "openssl", "lua-http-parser" },
+		config = function()
+			require("custom.config.telescope_plugins").arecibo()
+		end,
+	},
+	{
+		"kevinhwang91/rnvimr",
+		config = function()
+			require("custom.config.rnvimr")
+		end,
+	},
 }
 
 -- Add new whichkey bind
