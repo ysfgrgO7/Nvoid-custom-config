@@ -16,7 +16,7 @@ M.arecibo = function()
 	telescope.setup({
 		extensions = {
 			arecibo = {
-				["selected_engine"] = "google",
+				["selected_engine"] = "duckduckgo",
 				["url_open_command"] = "xdg-open",
 				["show_http_headers"] = false,
 				["show_domain_icons"] = false,
