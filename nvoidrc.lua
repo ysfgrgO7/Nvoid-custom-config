@@ -91,6 +91,7 @@ M.plugins_add = {
 			require("custom.config.rnvimr")
 		end,
 	},
+	{ "dstein64/nvim-scrollview" },
 }
 
 -- Add new whichkey bind
