@@ -31,6 +31,7 @@ M.options = {
 -- Add lsp
 M.lsp_add = {
 	"bashls",
+	"pyright",
 }
 
 -- Add treesitter language
