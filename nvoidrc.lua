@@ -26,6 +26,7 @@ M.options = {
 	swap_file = false,
 	backup = false,
 	show_mode = false,
+	nvimtree_indent_markers = true,
 }
 
 -- Add lsp
@@ -41,6 +42,8 @@ M.ts_add = {
 
 -- Add Plugins
 M.plugins_add = {
+
+	-- ZenMode
 	{
 		"folke/zen-mode.nvim",
 		config = function()
@@ -48,6 +51,7 @@ M.plugins_add = {
 		end,
 	},
 
+	-- Twilight
 	{
 		"folke/twilight.nvim",
 		config = function()
@@ -55,12 +59,14 @@ M.plugins_add = {
 		end,
 	},
 
+	-- Nvim projects
 	{
 		"ahmedkhalf/project.nvim",
 		config = function()
 			require("custom.config.projects")
 		end,
 	},
+	-- Telescope projects
 
 	{
 		"nvim-telescope/telescope-project.nvim",
@@ -69,6 +75,7 @@ M.plugins_add = {
 		end,
 	},
 
+	-- Telescope GH
 	{
 		"nvim-telescope/telescope-github.nvim",
 		config = function()
@@ -76,6 +83,7 @@ M.plugins_add = {
 		end,
 	},
 
+	-- Telescope arecibo (websearch)
 	{
 		"nvim-telescope/telescope-arecibo.nvim",
 		rocks = { "openssl", "lua-http-parser" },
@@ -84,15 +92,21 @@ M.plugins_add = {
 		end,
 	},
 
-	{ "nvim-telescope/telescope-packer.nvim" },
+	-- Telescope packer
+	{
+		"nvim-telescope/telescope-packer.nvim",
+		config = function()
+			require("custom.config.telescope_plugins").packer()
+		end,
+	},
 
+	-- Rnvimr (Ranger)
 	{
 		"kevinhwang91/rnvimr",
 		config = function()
 			require("custom.config.rnvimr")
 		end,
 	},
-	{ "dstein64/nvim-scrollview" },
 }
 
 -- Add new whichkey bind
@@ -116,6 +130,7 @@ M.whichkey_add = {
 	f = {
 		name = "Find",
 		p = { "<cmd>Telescope projects<cr>", "Projects" },
+		P = { "<cmd>Telescope packer<cr>", "Packer" },
 		W = { "<cmd>Telescope arecibo websearch<cr>", "Web" },
 		l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
 	},

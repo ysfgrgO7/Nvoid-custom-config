@@ -1,5 +1,6 @@
 local M = {}
 
+-- Zen
 M.zen = function()
 	require("zen-mode").setup({
 		window = {
@@ -20,6 +21,7 @@ M.zen = function()
 	})
 end
 
+-- Twilight
 M.twilight = function()
 	require("twilight").setup({
 		{
