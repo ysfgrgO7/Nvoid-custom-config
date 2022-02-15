@@ -66,8 +66,8 @@ M.plugins_add = {
 			require("custom.config.projects")
 		end,
 	},
-	-- Telescope projects
 
+	-- Telescope projects
 	{
 		"nvim-telescope/telescope-project.nvim",
 		config = function()
