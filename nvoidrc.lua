@@ -4,7 +4,7 @@ local M = {}
 M.ui = {
 	theme = "catppuccin",
 	transparency = false,
-	statusline = "nvoid",
+	statusline = "minimal",
 }
 
 -- Options
@@ -38,6 +38,7 @@ M.lsp_add = {
 -- Add treesitter language
 M.ts_add = {
 	"fish",
+	"html",
 }
 
 -- Add Plugins
