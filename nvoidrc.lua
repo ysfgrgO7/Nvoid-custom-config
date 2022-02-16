@@ -123,11 +123,6 @@ M.whichkey_add = {
 		z = { "<cmd>ZenMode<cr>", "ZenMode" },
 		t = { "<cmd>Twilight<cr>", "Twilight" },
 	},
-	t = {
-		name = "Terminal",
-		v = { "<cmd>:ToggleTerm size=13 direction=horizontal<cr>", "Horizontal" },
-		t = { "<cmd>:ToggleTerm direction=tab<cr>", "New tab" },
-	},
 	f = {
 		name = "Find",
 		p = { "<cmd>Telescope projects<cr>", "Projects" },
