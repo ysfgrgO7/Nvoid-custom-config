@@ -19,19 +19,4 @@ M.gh = function()
 	telescope.load_extension("gh")
 end
 
--- Arecibo (websearch)
-M.arecibo = function()
-	telescope.setup({
-		extensions = {
-			arecibo = {
-				["selected_engine"] = "duckduckgo",
-				["url_open_command"] = "xdg-open",
-				["show_http_headers"] = false,
-				["show_domain_icons"] = false,
-			},
-		},
-	})
-	telescope.load_extension("arecibo")
-end
-
 return M

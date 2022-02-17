@@ -84,15 +84,6 @@ M.plugins_add = {
 		end,
 	},
 
-	-- Telescope arecibo (websearch)
-	{
-		"nvim-telescope/telescope-arecibo.nvim",
-		rocks = { "openssl", "lua-http-parser" },
-		config = function()
-			require("custom.config.telescope_plugins").arecibo()
-		end,
-	},
-
 	-- Telescope packer
 	{
 		"nvim-telescope/telescope-packer.nvim",
