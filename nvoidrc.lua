@@ -43,7 +43,6 @@ M.ts_add = {
 
 -- Add Plugins
 M.plugins_add = {
-
 	-- ZenMode
 	{
 		"folke/zen-mode.nvim",
@@ -75,30 +74,6 @@ M.plugins_add = {
 			require("custom.config.telescope_plugins").project()
 		end,
 	},
-
-	-- Telescope GH
-	{
-		"nvim-telescope/telescope-github.nvim",
-		config = function()
-			require("custom.config.telescope_plugins").gh()
-		end,
-	},
-
-	-- Telescope packer
-	{
-		"nvim-telescope/telescope-packer.nvim",
-		config = function()
-			require("custom.config.telescope_plugins").packer()
-		end,
-	},
-
-	-- Rnvimr (Ranger)
-	{
-		"kevinhwang91/rnvimr",
-		config = function()
-			require("custom.config.rnvimr")
-		end,
-	},
 }
 
 -- Add new whichkey bind
@@ -117,11 +92,8 @@ M.whichkey_add = {
 	f = {
 		name = "Find",
 		p = { "<cmd>Telescope projects<cr>", "Projects" },
-		P = { "<cmd>Telescope packer<cr>", "Packer" },
-		W = { "<cmd>Telescope arecibo websearch<cr>", "Web" },
 		l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
 	},
-	["r"] = { "<cmd>:RnvimrToggle<cr>", "Ranger" },
 }
 
 return M
