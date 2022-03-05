@@ -1,5 +1,8 @@
 local M = {}
 
+-- custom functions
+require("custom.config.custom_functions")
+
 -- UI
 M.ui = {
 	theme = "catppuccin",
