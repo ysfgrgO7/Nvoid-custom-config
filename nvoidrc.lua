@@ -29,7 +29,7 @@ M.options = {
 	swap_file = false,
 	backup = false,
 	show_mode = false,
-	nvimtree_indent_markers = true,
+	nvimtree_indent_markers = false,
 }
 
 -- Add lsp
